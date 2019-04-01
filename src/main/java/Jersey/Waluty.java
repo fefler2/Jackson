@@ -32,6 +32,9 @@ public class Waluty {
             System.out.println(kurs.getCurrency());
             System.out.println(kurs.getTable());
             System.out.println(kurs.getCode());
+            System.out.println(kurs.getRates().get(0).getNo());
+            System.out.println(kurs.getRates().get(0).getEffectiveDate());
+            System.out.println(kurs.getRates().get(0).getAsk());
 
         }
         catch (Exception e){
