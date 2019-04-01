@@ -27,7 +27,7 @@ public class Waluty {
 
             ObjectMapper mapper = new ObjectMapper();
             Kursy kurs = mapper.readValue(pobranyJson, Kursy.class);
-            System.out.println("kurs +  " +kurs);
+            System.out.println("kurs +  " + kurs);
             System.out.println();
             System.out.println(kurs.getCurrency());
             System.out.println(kurs.getTable());
@@ -36,8 +36,7 @@ public class Waluty {
             System.out.println(kurs.getRates().get(0).getEffectiveDate());
             System.out.println(kurs.getRates().get(0).getAsk());
 
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
 
         }
