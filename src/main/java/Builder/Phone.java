@@ -19,7 +19,7 @@ public class Phone {
     private int battery;
 
     public Phone(String os, int ram, String processor, double screenSize, int battery) {
-        super();
+//        super();
         this.os = os;
         this.ram = ram;
         this.processor = processor;
