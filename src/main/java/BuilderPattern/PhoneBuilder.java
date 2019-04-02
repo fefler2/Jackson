@@ -1,8 +1,20 @@
 package BuilderPattern;
 
+
 public class PhoneBuilder {
-    public void setOs(String os) {
+
+
+
+
+    private String os;
+    private int ram;
+    private String processor;
+    private double screenSize;
+    private int battery;
+
+    public  PhoneBuilder setOs(String os) {
         this.os = os;
+        return this;
     }
 
     public PhoneBuilder setRam(int ram) {
@@ -25,14 +37,9 @@ public class PhoneBuilder {
         return this;
     }
 
-    private String os;
-    private int ram;
-    private String processor;
-    private double screenSize;
-    private int battery;
-
-    // !!!!!!!!!!!!!
+    ///////////////////
     public Phone getPhone(){
         return new Phone(os, ram, processor, screenSize, battery);
     }
+
 }
