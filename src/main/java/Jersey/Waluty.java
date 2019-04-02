@@ -40,5 +40,27 @@ public class Waluty {
             e.printStackTrace();
 
         }
+        Waluty waluty = new Waluty();
+        waluty.showPrimeNumbers(100);
+
+
     }
+
+    boolean isPrime(int a){
+        for (int i = 2; i < a; i++) {
+            if (a%i==0) {
+                return false;
+            }
+
+        }
+        return true;
+    }
+    void showPrimeNumbers(int n) {
+        for (int i = 2; i < n+1; i++) {
+            if (isPrime(i)){
+                System.out.println(i);
+            }
+        }
+    }
+
 }
