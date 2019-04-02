@@ -7,23 +7,23 @@ public class PhoneBuilder {
     private double screenSize;
     private int battery;
 
-    public void setOs(String os) {
+    public void PhoneBuilder (String os) {
         this.os = os;
     }
 
-    public void setRam(int ram) {
+    public PhoneBuilder setRam(int ram) {
         this.ram = ram;
     }
 
-    public void setProcessor(String processor) {
+    public PhoneBuilder setProcessor(String processor) {
         this.processor = processor;
     }
 
-    public void setScreenSize(double screenSize) {
+    public PhoneBuilder setScreenSize(double screenSize) {
         this.screenSize = screenSize;
     }
 
-    public void setBattery(int battery) {
+    public PhoneBuilder setBattery(int battery) {
         this.battery = battery;
     }
 }
