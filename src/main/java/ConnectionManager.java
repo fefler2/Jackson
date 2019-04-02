@@ -26,6 +26,7 @@ public class ConnectionManager {
             System.out.println("Driver not found.");
         }
         return con;
+
     }
 
     public static void main(String[] args) throws SQLException {
