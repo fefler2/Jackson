@@ -44,6 +44,7 @@ public class Waluty {
         waluty.showPrimeNumbers(100);
 
 
+        System.out.println("a");
     }
 
     boolean isPrime(int a){
