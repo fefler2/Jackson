@@ -1,14 +1,19 @@
 package Builder;
 
 public class PhoneBuilder {
+
+
+
+
     private String os;
     private int ram;
     private String processor;
     private double screenSize;
     private int battery;
 
-    public void PhoneBuilder (String os) {
+    public  PhoneBuilder setOs(String os) {
         this.os = os;
+        return this;
     }
 
     public PhoneBuilder setRam(int ram) {
@@ -30,4 +35,10 @@ public class PhoneBuilder {
         this.battery = battery;
         return this;
     }
+
+    ///////////////////
+    public Phone getPhone(){
+        return new Phone(os, ram, processor, screenSize, battery);
+    }
+
 }
