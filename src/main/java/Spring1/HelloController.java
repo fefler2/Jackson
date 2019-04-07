@@ -1,6 +1,8 @@
 package Spring1;
 
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -22,7 +24,8 @@ public class HelloController {
 
     @GetMapping("/c")
     public String getC(@RequestParam("id") String s){
-        return "ABC: " + s; // http://localhost:8080/c?id=fd zamiast http://localhost:8080/c?s=fd
+        HttpStatus s2 = HttpStatus.ACCEPTED;
+        return "ABC: " + s + s2; // http://localhost:8080/c?id=fd zamiast http://localhost:8080/c?s=fd
     }
 
 }
