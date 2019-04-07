@@ -35,33 +35,21 @@ public class Waluty {
             System.out.println(kurs.getRates().get(0).getNo());
             System.out.println(kurs.getRates().get(0).getEffectiveDate());
             System.out.println(kurs.getRates().get(0).getAsk());
+            System.out.println("Kurs dolara to " + kurs.getRates().get(0).getAsk());
 
         } catch (Exception e) {
             e.printStackTrace();
 
         }
         Waluty waluty = new Waluty();
-        waluty.showPrimeNumbers(100);
+
+
 
 
         System.out.println("a");
     }
 
-    boolean isPrime(int a){
-        for (int i = 2; i < a; i++) {
-            if (a%i==0) {
-                return false;
-            }
 
-        }
-        return true;
-    }
-    void showPrimeNumbers(int n) {
-        for (int i = 2; i < n+1; i++) {
-            if (isPrime(i)){
-                System.out.println(i);
-            }
-        }
-    }
+
 
 }
