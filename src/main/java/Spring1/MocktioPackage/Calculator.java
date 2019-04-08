@@ -11,6 +11,9 @@ class CalculatorService {
 public class Calculator {
 
 
+    public Calculator(CalculatorService service) {
+        this.service = service;
+    }
 
     CalculatorService service;
 //    CalculatorService service = new CalculatorService();
@@ -18,7 +21,7 @@ public class Calculator {
 // bez mockito, ale trzeba byloby uzyc obiektu
 
     public int perform(int i, int j) {
-        return service.add(i, j)*i;
+        return service.add(i, j) * i;
     }
 
 
