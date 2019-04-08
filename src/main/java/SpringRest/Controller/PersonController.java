@@ -13,6 +13,7 @@ import java.util.Hashtable;
 
 // http://localhost:8080/persons/all zwraca
 // {"2":{"id":"2","firstName":"Steve","lastName":"Smith","age":21},"1":{"id":"1","firstName":"Steve","lastName":"Smith","age":21}}
+// http://localhost:8080/persons/1 zwraca {"id":"1","firstName":"Steve","lastName":"Smith","age":21}
 @RestController
 @RequestMapping("/persons")
 public class PersonController {
