@@ -21,7 +21,8 @@ public class Calculator {
 // bez mockito, ale trzeba byloby uzyc obiektu
 
     public int perform(int i, int j) {
-        return service.add(i, j) * i;
+//        return service.add(i, j) * i;
+        return (i + j) * i;
     }
 
 

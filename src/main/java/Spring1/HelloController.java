@@ -28,7 +28,24 @@ public class HelloController {
         return "ABC: " + s + s2; // http://localhost:8080/c?id=fd zamiast http://localhost:8080/c?s=fd
     }
 
+    @GetMapping
+    public String getAv(){
+        return "avc";
+    }
 
+    @GetMapping("auta")
+    public String asd(@RequestParam("auta") String s){
+        return "Auta: " + s;
+
+    }
+
+
+
+
+    @PostMapping("f")
+    public String postSomething(){
+        return "dfg";
+    }
 
 
 }

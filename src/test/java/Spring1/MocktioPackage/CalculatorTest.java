@@ -28,6 +28,7 @@ class CalculatorTest {
         when(service.add(2,3)).thenReturn(5);
         assertEquals(10, calculator.perform(2,3));
 
+        verify(service).add(2,3);
 
     }
 }
