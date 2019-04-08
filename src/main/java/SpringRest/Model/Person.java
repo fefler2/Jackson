@@ -2,7 +2,7 @@ package SpringRest.Model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
+@XmlRootElement // http://localhost:8080/persons/1
 public class Person {
     public String getId() {
         return id;
